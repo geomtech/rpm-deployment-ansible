@@ -1,0 +1,10 @@
+---
+# Author: dacruzalexy@gmail.com
+- name: Installation du RPM
+  yum: name={{rpm_package_url}}
+
+- name: Copie du fichier de configuration {{conf_file}}
+  template: src="file.conf.j2" dest="{{conf_file}}" owner="root" group="root" mode="u=rw,g=r,o=r"
+
+- name: Restart du service {{servicename}}
+  service: name="{{servicename}}" state="restarted" enabled="yes"

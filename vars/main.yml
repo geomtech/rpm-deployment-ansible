@@ -1,0 +1,5 @@
+---
+# Author: dacruzalexy@gmail.com
+rpm_package_url: "https://dl.influxdata.com/telegraf/releases/telegraf-1.13.3-1.x86_64.rpm" #example
+conf_file: "/etc/influxdb/influxdb.conf"
+servicename: "influxdb"
